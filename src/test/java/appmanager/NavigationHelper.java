@@ -21,4 +21,11 @@ public class NavigationHelper {
     public void openChart() {
         wd.findElement(By.cssSelector("div.shopping_cart_container a.shopping_cart_link")).click();
     }
+
+    public void openProductsPage() throws InterruptedException {
+        wd.findElement(By.cssSelector("div.header_container button#react-burger-menu-btn")).click();
+        Thread.sleep(2000);
+        wd.findElement(By.xpath("//nav[@class='bm-item-list']//a[contains(text(), 'All Items')]")).click();
+        Thread.sleep(4000);
+    }
 }

@@ -13,6 +13,8 @@ dependencies {
     testImplementation  'org.hamcrest:hamcrest:2.2'
     testImplementation  'io.rest-assured:rest-assured:4.4.0'
     testImplementation 'com.google.code.gson:gson:2.8.9'
+    testImplementation 'info.cukes:cucumber-java:1.2.6'
+    testImplementation 'info.cukes:cucumber-testng:1.2.6'
 }
 
 test {

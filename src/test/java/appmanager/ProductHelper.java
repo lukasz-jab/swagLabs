@@ -38,4 +38,5 @@ public class ProductHelper extends HelperBase {
     public void addToChart(int no) {
         wd.findElements(By.cssSelector("div.inventory_list div.inventory_item button[id^='add-to-cart']")).get(no - 1).click();
     }
+
 }
